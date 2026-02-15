@@ -1,0 +1,155 @@
+.product-bosh {
+    width: 100%;
+    height: 900px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.product-logo {
+    width: 1000px;
+    height: 1000px;
+    margin-left: 500px;
+}
+
+.product-bolim {
+    width: 100%;
+    padding: 60px 80px;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.product-sarlavha {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #222;
+}
+
+/*  3x3 card */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 380px); 
+    gap: 35px;
+    margin-bottom: 70px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #DDC7BB;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease;
+}
+
+/* .product-card:hover {
+    transform: translateY(-10px);
+} */
+
+.product-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-card-info {
+    padding: 18px 20px;
+}
+
+/* Location uchun style */
+.product-location {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-icon {
+    font-size: 20px;
+}
+
+/* Rooms va Size */
+.product-detail {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/*  NARX - tugmalardan OLDIN */
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/*  Tugmalar - narxdan KEYIN */
+.product-btn-box {
+    display: flex;
+    gap: 12px;
+}
+
+.product-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    background: #111;
+    color: white;
+}
+
+.product-btn:hover {
+    opacity: 0.8;
+}
+
+.reset-btn {
+    background: crimson;
+}
+
+/*  Loading spinner */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #111;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/*  Ikkinchi va uchinchi sarlavhalar uchun */
+.product-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 60px 0 40px;
+    text-align: center;
+    color: #222;
+}
